@@ -40,7 +40,7 @@ namespace FirstPlayableOop
         void EnemyMovement() // <- processes enemy one movement 
         {
             int AIuse;
-            if (Program.RNG.Next(0,1) == 1)
+            if (ID == 1 | ID == 3)
             {
                 AIuse = EnemyAI();
             }

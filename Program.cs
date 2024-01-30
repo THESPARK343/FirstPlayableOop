@@ -108,7 +108,7 @@ namespace FirstPlayableOop
             E3.EnemyDmg = 1;
             //gold and pickups
             PlayerClass.PGold = 0;
-            Console.Beep();
+            //Console.Beep();
             bool Done = false;
             P1.Pickup = true;
             while (Done) // <- Pickup one assignment
@@ -127,7 +127,7 @@ namespace FirstPlayableOop
                     Done = true;
                 }
             }
-            Console.Beep();
+            //Console.Beep();
             P2.Pickup = true;
            // Done = true;
             while (Done) // <- Pickup two assignment
@@ -146,7 +146,7 @@ namespace FirstPlayableOop
                     Done = true;
                 }
             }
-            Console.Beep();
+            //Console.Beep();
             P3.Pickup = true;
            // Done = true;
             while (Done) // <- Pickup three assignment
@@ -165,7 +165,7 @@ namespace FirstPlayableOop
                     Done = true;
                 }
             }
-            Console.Beep();
+            //Console.Beep();
             P4.Pickup = true;
            // Done = true;
             while (Done) // <- Pickup four assignment
@@ -184,7 +184,7 @@ namespace FirstPlayableOop
                     Done = true;
                 }
             }
-            Console.Beep();
+           // Console.Beep();
             P5.Pickup = true;
           //  Done = true;
             while (Done) // <- Pickup five assignment
@@ -203,7 +203,7 @@ namespace FirstPlayableOop
                     Done = true;
                 }
             }
-            Console.Beep();
+            //Console.Beep();
             //conditions
             DataClass.WinCondition = false;
             DataClass.AttackCollision = false;

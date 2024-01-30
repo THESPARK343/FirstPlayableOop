@@ -49,13 +49,17 @@ namespace FirstPlayableOop
         }
         static public void PrintHUD() // <- Displays HUD 
         {
-            Console.SetCursorPosition(5, 25);
-            Console.Write("                            \n                           \n                          \n                                                                         ");
-            Console.SetCursorPosition(5, 25);
+            Console.SetCursorPosition(0, 23);
+            Console.Write("                                                                         \n                                                                         \n                                                                         \n                                                                         \n                                                                         ");
+            Console.SetCursorPosition(0, 23);
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Player Hp: " + PlayerClass.PHp + "/" + PlayerClass.PmHp + "  |  " + "Gold: " + PlayerClass.PGold);
-            Console.Write("\n" + "Enemy: " + Program.E1.EHp + "/" + Program.E1.EmHp);
-            Console.Write("\n" + "Enemy: " + Program.E2.EHp + "/" + Program.E2.EmHp);
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.Write("\n" + "Intel Report: " + DataClass.LogMSG);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("\n" + "Enemy 1: " + Program.E1.EHp + "/" + Program.E1.EmHp);
+            Console.Write("\n" + "Enemy 2: " + Program.E2.EHp + "/" + Program.E2.EmHp);
+            Console.Write("\n" + "Enemy 3: " + Program.E3.EHp + "/" + Program.E3.EmHp);
 
         }
     }
