@@ -17,19 +17,7 @@ namespace FirstPlayableOop
         public static int EnemiesDefeated;
         static public void PlayerTurn() // <- Processes Player turn 
         {
-            PmHp = 10;
-            if (Program.E1.EHp <= 0)
-            {
-                PmHp = PmHp + 5;
-            }
-            if (Program.E2.EHp <= 0)
-            {
-                PmHp = PmHp + 5;
-            }
-            if (Program.E3.EHp <= 0)
-            {
-                PmHp = PmHp + 5;
-            }
+            HealthSystemClass.HealthUpgrades();
             PlayerMovement();
             GraphicsClass.PrintHUD();
 

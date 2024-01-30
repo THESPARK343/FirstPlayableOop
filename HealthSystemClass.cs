@@ -44,5 +44,21 @@ namespace FirstPlayableOop
                 return dfndHp;
             }
         }
+        public static void HealthUpgrades() // <- checks and applies applicable health upgrades
+        {
+            PlayerClass.PmHp = 10;
+            if (Program.E1.EHp <= 0)
+            {
+                PlayerClass.PmHp = PlayerClass.PmHp + 5;
+            }
+            if (Program.E2.EHp <= 0)
+            {
+                PlayerClass.PmHp = PlayerClass.PmHp + 5;
+            }
+            if (Program.E3.EHp <= 0)
+            {
+                PlayerClass.PmHp = PlayerClass.PmHp + 5;
+            }
+        }
     } 
 }
